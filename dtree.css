@@ -1,15 +1,82 @@
-/*
-Ini adalah kode yang hilang dari file dtree.css Anda
-*/
+/*--------------------------------------------------|
+| dTree 2.05 | www.destroydrop.com/javascript/tree/ |
+|---------------------------------------------------|
+| Copyright (c) 2002-2003 Geir Landrø              |
+|--------------------------------------------------*/
 
-.dtree img.li_folder { /* Ini untuk ikon folder terbuka */
-  background: url("img/folder.gif") no-repeat;
-  /* Atribut lainnya */
+.dtree {
+	font-family: Verdana, Geneva, Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	color: #666;
+	white-space: nowrap;
+}
+.dtree img {
+	border: 0px;
+	vertical-align: middle;
+}
+.dtree a {
+	color: #333;
+	text-decoration: none;
+}
+.dtree a.node, .dtree a.nodeSel {
+	white-space: nowrap;
+	padding: 1px 2px 1px 2px;
+}
+.dtree a.node:hover, .dtree a.nodeSel:hover {
+	color: #333;
+	text-decoration: underline;
+}
+.dtree a.nodeSel {
+	background-color: #c0d2ec;
+}
+.dtree img.folder, .dtree img.li_folder {
+	background: url("img/folder.gif") no-repeat;
+	padding: 0 10px 0 0;
+}
+.dtree img.file, .dtree img.li_file {
+	background: url("img/page.gif") no-repeat;
+	padding: 0 10px 0 0;
+}
+.dtree img.imgfolder, .dtree img.li_imgfolder {
+	background: url("img/imgfolder.gif") no-repeat;
+	padding: 0 10px 0 0;
+}
+.dtree img.trash, .dtree img.li_trash {
+	background: url("img/trash.gif") no-repeat;
+	padding: 0 10px 0 0;
+}
+.dtree img.open {
+	background: url("img/minus.gif") no-repeat;
+	padding: 0 10px 0 0;
+}
+.dtree img.closed {
+	background: url("img/plus.gif") no-repeat;
+	padding: 0 10px 0 0;
+}
+.dtree img.line {
+	background: url("img/line.gif") no-repeat;
+	padding: 0 10px 0 0;
+}
+.dtree img.join {
+	background: url("img/join.gif") no-repeat;
+	padding: 0 10px 0 0;
+}
+.dtree img.joinbottom {
+	background: url("img/joinbottom.gif") no-repeat;
+	padding: 0 10px 0 0;
+}
+.dtree img.empty {
+	background: url("img/empty.gif") no-repeat;
+	padding: 0 10px 0 0;
+}
+.dtree img.node, .dtree img.lastnode {
+	background: url("img/page.gif") no-repeat;
+	padding: 0 10px 0 0;
+}
+.dtree img.spacer {
+	width: 16px;
+	height: 16px;
+	background-color: transparent;
+	display: inline-block;
 }
 
-.dtree img.li_imgfolder { /* Ini untuk ikon folder gambar */
-  background: url("img/imgfolder.gif") no-repeat;
-  /* Atribut lainnya */
-}
-
-/* Dan seterusnya untuk ikon-ikon lain seperti trash.gif, page.gif, dll. */
