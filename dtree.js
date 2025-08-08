@@ -1,6 +1,6 @@
 /**************************************************************************
 	Copyright (c) 2001-2003 Geir Landrö (drop@destroydrop.com)
-	JavaScript Tree - www.destroydrop.com/hjavascripts/tree/
+	JavaScript Tree - www.destroydrop.com/javascripts/tree/
 	Version 0.96	
 
 	This script can be used freely as long as all copyright messages are
@@ -8,7 +8,7 @@
 **************************************************************************/
 
 // Arrays for nodes and icons
-var nodes			= new Array();;
+var nodes			= new Array();
 var openNodes	= new Array();
 var icons			= new Array(6);
 
@@ -59,7 +59,7 @@ function setOpenNodes(openNode) {
 			openNodes.push(nodeValues[0]);
 			setOpenNodes(nodeValues[1]);
 		}
-	} 
+	} 
 }
 // Checks if a node is open
 function isNodeOpen(node) {
@@ -100,7 +100,7 @@ function addNode(parentNode, recursedNodes) {
 			// Write out line & empty icons
 			for (g=0; g<recursedNodes.length; g++) {
 				if (recursedNodes[g] == 1) document.write("<img src=\"https://arjunaireung378-droid.github.io/my-blog-assets/img/line.gif\" align=\"absbottom\" alt=\"\" />");
-				else  document.write("<img src=\"https://arjunaireung378-droid.github.io/my-blog-assets/img/empty.gif\" align=\"absbottom\" alt=\"\" />");
+				else  document.write("<img src=\"https://arjunaireung378-droid.github.io/my-blog-assets/img/empty.gif\" align=\"absbottom\" alt=\"\" />");
 			}
 
 			// put in array line & empty icons
@@ -110,12 +110,12 @@ function addNode(parentNode, recursedNodes) {
 			// Write out join icons
 			if (hcn) {
 				if (ls) {
-					document.write("<a href=\"javascript: oc(" + nodeValues[0] + ", 1);\"><img id=\"join" + nodeValues[0] + "\" src=\"img/");
+					document.write("<a href=\"javascript: oc(" + nodeValues[0] + ", 1);\"><img id=\"join" + nodeValues[0] + "\" src=\"https://arjunaireung378-droid.github.io/my-blog-assets/img/");
 					 	if (ino) document.write("minus");
 						else document.write("plus");
 					document.write("bottom.gif\" align=\"absbottom\" alt=\"Open/Close node\" /></a>");
 				} else {
-					document.write("<a href=\"javascript: oc(" + nodeValues[0] + ", 0);\"><img id=\"join" + nodeValues[0] + "\" src=\"img/");
+					document.write("<a href=\"javascript: oc(" + nodeValues[0] + ", 0);\"><img id=\"join" + nodeValues[0] + "\" src=\"https://arjunaireung378-droid.github.io/my-blog-assets/img/");
 						if (ino) document.write("minus");
 						else document.write("plus");
 					document.write(".gif\" align=\"absbottom\" alt=\"Open/Close node\" /></a>");
@@ -130,7 +130,7 @@ function addNode(parentNode, recursedNodes) {
 			
 			// Write out folder & page icons
 			if (hcn) {
-				document.write("<img id=\"icon" + nodeValues[0] + "\" src=\"img/folder")
+				document.write("<img id=\"icon" + nodeValues[0] + "\" src=\"https://arjunaireung378-droid.github.io/my-blog-assets/img/folder")
 					if (ino) document.write("open");
 				document.write(".gif\" align=\"absbottom\" alt=\"Folder\" />");
 			} else document.write("<img id=\"icon" + nodeValues[0] + "\" src=\"https://arjunaireung378-droid.github.io/my-blog-assets/img/page.gif\" align=\"absbottom\" alt=\"Page\" />");
@@ -150,7 +150,7 @@ function addNode(parentNode, recursedNodes) {
 				document.write("</div>");
 			}
 			
-			// remove last line or empty icon 
+			// remove last line or empty icon 
 			recursedNodes.pop();
 		}
 	}
@@ -190,11 +190,3 @@ if(!Array.prototype.pop) {
 	}
 	Array.prototype.pop = array_pop;
 }
-
-
-
-
-
-
-
-
