@@ -15,17 +15,17 @@ var icons			= new Array(6);
 // Loads all icons that are used in the tree
 function preloadIcons() {
 	icons[0] = new Image();
-	icons[0].src = "img/plus.gif";
+	icons[0].src = "https://arjunaireung378-droid.github.io/my-blog-assets/img/plus.gif";
 	icons[1] = new Image();
-	icons[1].src = "img/plusbottom.gif";
+	icons[1].src = "https://arjunaireung378-droid.github.io/my-blog-assets/img/plusbottom.gif";
 	icons[2] = new Image();
-	icons[2].src = "img/minus.gif";
+	icons[2].src = "https://arjunaireung378-droid.github.io/my-blog-assets/img/minus.gif";
 	icons[3] = new Image();
-	icons[3].src = "img/minusbottom.gif";
+	icons[3].src = "https://arjunaireung378-droid.github.io/my-blog-assets/img/minusbottom.gif";
 	icons[4] = new Image();
-	icons[4].src = "img/folder.gif";
+	icons[4].src = "https://arjunaireung378-droid.github.io/my-blog-assets/img/folder.gif";
 	icons[5] = new Image();
-	icons[5].src = "img/folderopen.gif";
+	icons[5].src = "https://arjunaireung378-droid.github.io/my-blog-assets/img/folderopen.gif";
 }
 // Create the tree
 function createTree(arrName, startNode, openNode) {
@@ -38,7 +38,7 @@ function createTree(arrName, startNode, openNode) {
 		if (startNode !=0) {
 			var nodeValues = nodes[getArrayId(startNode)].split("|");
 			document.write("<a href=\"" + nodeValues[3] + "\" onmouseover=\"window.status='" + nodeValues[2] + "';return true;\" onmouseout=\"window.status=' ';return true;\"><img src=\"img/folderopen.gif\" align=\"absbottom\" alt=\"\" />" + nodeValues[2] + "</a><br />");
-		} else document.write("<img src=\"img/base.gif\" align=\"absbottom\" alt=\"\" />Website<br />");
+		} else document.write("<img src=\"https://arjunaireung378-droid.github.io/my-blog-assets/img/base.gif\" align=\"absbottom\" alt=\"\" />Website<br />");
 	
 		var recursedNodes = new Array();
 		addNode(startNode, recursedNodes);
@@ -99,8 +99,8 @@ function addNode(parentNode, recursedNodes) {
 
 			// Write out line & empty icons
 			for (g=0; g<recursedNodes.length; g++) {
-				if (recursedNodes[g] == 1) document.write("<img src=\"img/line.gif\" align=\"absbottom\" alt=\"\" />");
-				else  document.write("<img src=\"img/empty.gif\" align=\"absbottom\" alt=\"\" />");
+				if (recursedNodes[g] == 1) document.write("<img src=\"https://arjunaireung378-droid.github.io/my-blog-assets/img/line.gif\" align=\"absbottom\" alt=\"\" />");
+				else  document.write("<img src=\"https://arjunaireung378-droid.github.io/my-blog-assets/img/empty.gif\" align=\"absbottom\" alt=\"\" />");
 			}
 
 			// put in array line & empty icons
@@ -121,8 +121,8 @@ function addNode(parentNode, recursedNodes) {
 					document.write(".gif\" align=\"absbottom\" alt=\"Open/Close node\" /></a>");
 				}
 			} else {
-				if (ls) document.write("<img src=\"img/joinbottom.gif\" align=\"absbottom\" alt=\"\" />");
-				else document.write("<img src=\"img/join.gif\" align=\"absbottom\" alt=\"\" />");
+				if (ls) document.write("<img src=\"https://arjunaireung378-droid.github.io/my-blog-assets/img/joinbottom.gif\" align=\"absbottom\" alt=\"\" />");
+				else document.write("<img src=\"https://arjunaireung378-droid.github.io/my-blog-assets/img/join.gif\" align=\"absbottom\" alt=\"\" />");
 			}
 
 			// Start link
@@ -133,7 +133,7 @@ function addNode(parentNode, recursedNodes) {
 				document.write("<img id=\"icon" + nodeValues[0] + "\" src=\"img/folder")
 					if (ino) document.write("open");
 				document.write(".gif\" align=\"absbottom\" alt=\"Folder\" />");
-			} else document.write("<img id=\"icon" + nodeValues[0] + "\" src=\"img/page.gif\" align=\"absbottom\" alt=\"Page\" />");
+			} else document.write("<img id=\"icon" + nodeValues[0] + "\" src=\"https://arjunaireung378-droid.github.io/my-blog-assets/img/page.gif\" align=\"absbottom\" alt=\"Page\" />");
 			
 			// Write out node name
 			document.write(nodeValues[2]);
@@ -190,5 +190,6 @@ if(!Array.prototype.pop) {
 	}
 	Array.prototype.pop = array_pop;
 }
+
 
 
