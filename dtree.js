@@ -37,7 +37,7 @@ function createTree(arrName, startNode, openNode) {
 	
 		if (startNode !=0) {
 			var nodeValues = nodes[getArrayId(startNode)].split("|");
-			document.write("<a href=\"" + nodeValues[3] + "\" onclick=\"return false;\" onmouseover=\"window.status='" + nodeValues[2] + "';return true;\" onmouseout=\"window.status=' ';return true;\"><img src=\"https://arjunaireung378-droid.github.io/my-blog-assets/img/folderopen.gif\" align=\"absbottom\" alt=\"\" />" + nodeValues[2] + "</a><br />");
+			document.write("<a href=\"" + nodeValues[3] + "\" onmouseover=\"window.status='" + nodeValues[2] + "';return true;\" onmouseout=\"window.status=' ';return true;\"><img src=\"https://arjunaireung378-droid.github.io/my-blog-assets/img/folderopen.gif\" align=\"absbottom\" alt=\"\" />" + nodeValues[2] + "</a><br />");
 		} else document.write("<img src=\"https://arjunaireung378-droid.github.io/my-blog-assets/img/base.gif\" align=\"absbottom\" alt=\"\" />Website<br />");
 	
 		var recursedNodes = new Array();
@@ -126,7 +126,7 @@ function addNode(parentNode, recursedNodes) {
 			}
 
 			// Start link
-			document.write("<a href=\"" + nodeValues[3] + "\" onmouseover=\"window.status='" + nodeValues[2] + "';return true;\" onmouseout=\"window.status=' ';return true;\">");
+			//document.write("<a href=\"" + nodeValues[3] + "\" onmouseover=\"window.status='" + nodeValues[2] + "';return true;\" onmouseout=\"window.status=' ';return true;\">");
 			
 			// Write out folder & page icons
 			if (hcn) {
@@ -190,5 +190,6 @@ if(!Array.prototype.pop) {
 	}
 	Array.prototype.pop = array_pop;
 }
+
 
 
