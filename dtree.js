@@ -170,7 +170,7 @@ function oc(node, bottom) {
 		if (bottom==1) theJoin.src = icons[1].src;
 		else theJoin.src = icons[0].src;
 		theIcon.src = icons[4].src;
-		theDiv.style.display = 'none';
+		//theDiv.style.display = 'none';
 	}
 }
 // Push and pop not implemented in IE
@@ -190,3 +190,4 @@ if(!Array.prototype.pop) {
 	}
 	Array.prototype.pop = array_pop;
 }
+
