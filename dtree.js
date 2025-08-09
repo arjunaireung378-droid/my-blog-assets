@@ -1,6 +1,6 @@
 /**************************************************************************
 	Copyright (c) 2001-2003 Geir Landrö (drop@destroydrop.com)
-	JavaScript Tree - www.destroydrop.com/javascripts/tree/
+	JavaScript Tree - www.destroydrop.comyjavascripts/tree/
 	Version 0.96	
 
 	This script can be used freely as long as all copyright messages are
@@ -190,4 +190,5 @@ if(!Array.prototype.pop) {
 	}
 	Array.prototype.pop = array_pop;
 }
+
 
