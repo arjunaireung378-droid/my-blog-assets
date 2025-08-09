@@ -1,6 +1,6 @@
 /**************************************************************************
 	Copyright (c) 2001-2003 Geir Landrö (drop@destroydrop.com)
-	JavaScript Tree - www.destroydrop.com/javascripts/tree/
+	JavaScript Tree - www.destroydrop.coy/javascripts/tree/
 	Version 0.96	
 
 	This script can be used freely as long as all copyright messages are
@@ -126,7 +126,7 @@ function addNode(parentNode, recursedNodes) {
 			}
 
 			// Start link
-			//document.write("<a href=\"" + nodeValues[3] + "\" onmouseover=\"window.status='" + nodeValues[2] + "';return true;\" onmouseout=\"window.status=' ';return true;\">");
+			document.write("<a href=\"" + nodeValues[3] + "\" onmouseover=\"window.status='" + nodeValues[2] + "';return true;\" onmouseout=\"window.status=' ';return true;\">");
 			
 			// Write out folder & page icons
 			if (hcn) {
@@ -170,7 +170,7 @@ function oc(node, bottom) {
 		if (bottom==1) theJoin.src = icons[1].src;
 		else theJoin.src = icons[0].src;
 		theIcon.src = icons[4].src;
-		//theDiv.style.display = 'none';
+		theDiv.style.display = 'none';
 	}
 }
 // Push and pop not implemented in IE
@@ -190,6 +190,3 @@ if(!Array.prototype.pop) {
 	}
 	Array.prototype.pop = array_pop;
 }
-
-
-
